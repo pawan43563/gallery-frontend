@@ -1,0 +1,15 @@
+frontend
+
+    --components    
+        --Navbar
+            -- on home page (logo, register ,login(!login),logout(if(login))
+            -- on reg page( logo,home, login)
+            -- on login page (logo,home,register)
+            -- user_profile (logo,home,logout)
+        --footer(social links)
+    --pages
+        --home page (gallery) 
+        --registration page
+        --login page  
+            on successful login redirect to home page 
+        --user profile (galleryusers) 
