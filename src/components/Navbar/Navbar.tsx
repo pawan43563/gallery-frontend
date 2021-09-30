@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import { RootState } from '../../app/store';
 import { loggedOut } from '../../features/auth/authSlice';
@@ -7,7 +7,7 @@ import { loggedOut } from '../../features/auth/authSlice';
 function Navigation(){
 
     const loginValue = useSelector((state: RootState)=> state.islogin.value);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch();    
 
     const clearSession =() => {
         dispatch(loggedOut());
