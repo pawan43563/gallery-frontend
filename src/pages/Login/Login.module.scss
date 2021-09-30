@@ -3,8 +3,9 @@
     width: 500px;
     margin: 40px;
     // border: 3px solid black;
-    height: 76vh;
-    background-color: #F0F0F0;
+    // height: 76vh;
+    padding: 3rem;
+    background-color: #f8f8b191;
     border-radius: 15px;
     padding: 8px;
     display: flex;
@@ -39,14 +40,16 @@
     }
 
     button{
-        width: 50%;
+        width: 60%;
         height: 30px;
         color: black;
         font-weight: 600;
-        background-color: #3C9AE2;
         border: 3px solid #3C9AE2;
         border-radius: 5px;
         margin: 10px;
+        :hover{
+            background-color: #aad8df;
+        }
     }
 
     p{

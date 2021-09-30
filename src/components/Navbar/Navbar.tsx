@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import { RootState } from '../../app/store';
 import { loggedOut } from '../../features/auth/authSlice';
-
+import logo from '../Logo/Logo.png'
 function Navigation(){
 
     const loginValue = useSelector((state: RootState)=> state.islogin.value);
@@ -15,7 +15,7 @@ function Navigation(){
 
     return (
         <header className={styles.header}>
-        <Link to="/"><img src="" alt="Logo" className={styles.navLogo}></img></Link>
+        <Link to="/"><img src={logo} alt="Logo" className={styles.navLogo}></img></Link>
         <div className={styles.container}>
             <ul className={styles.navContainer}>
                 {   loginValue ?

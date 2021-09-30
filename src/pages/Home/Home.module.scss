@@ -1,0 +1,84 @@
+:root {
+    --card_width: 280px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+
+.pin_container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 10vh auto;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+}
+
+.card {
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease;
+    box-shadow: 0 19px 19px #b4c3c5c4,0 15px 12px #adc9ce93;
+
+    img{
+        width:100%;
+        height: 100%;
+    }
+    .overlay{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        height: 40%;
+        width : 100%;
+        font-size: 16px;
+    }
+    :hover{
+        opacity: 0.92;
+    } 
+}
+
+.card:hover .overlay{
+    opacity: 1;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.65);    
+    padding-top:5px;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+}
+.viewBtn{
+    all: unset;
+    border:1px solid #fff;
+    padding: 3px 6px;
+   
+}
+.viewBtn:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+

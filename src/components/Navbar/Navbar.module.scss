@@ -4,7 +4,7 @@ header{
     top: 0; 
     display: flex;
     justify-content: space-around;
-    background-color: #E3E3E3;
+    background-color: #313131;
     align-items: center;
     position: absolute;
     top: 0;
@@ -12,7 +12,7 @@ header{
 
 .container{
     width:100%;
-    background-color: #E3E3E3;
+    background-color: #313131;
     display: flex;
     justify-content: flex-end;
 }
@@ -59,9 +59,9 @@ header{
 
 .navLink{
     text-decoration: none;
-    color: black;
     font-weight: 600;
     font-size: 20px;
     transition: color .5s linear;
+    color:#FFFFC2;
 }
 
