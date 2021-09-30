@@ -3,13 +3,15 @@
     width: 500px;
     margin: 40px;
     height: 80%;
-    background-color: #f8f8b191;
+    background-color: #f8f8b1d2;
     border-radius: 15px;
     padding: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 19px 19px #b4c3c5c4,0 15px 12px #adc9ce93;
+
 
     @media (max-width: 550px) {
         width: 90%;
@@ -19,7 +21,7 @@
         margin-bottom: 15px;
         width: 60%;
         height: 25px;
-        background-color: #E3E3E3;
+        background-color: white;
         color: black;
         border: 3px solid #E3E3E3;
         border-radius: 5px;

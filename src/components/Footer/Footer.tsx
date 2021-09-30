@@ -1,6 +1,3 @@
-
-
-import React, { useEffect, useState } from 'react';
 import styles from './Footer.module.scss'
 import logo from '../Logo/Logo.png'
 
@@ -59,9 +56,9 @@ const Footer: React.FC=()=>{
             <div>
                 <p className={styles.footerLinkHead}>{}</p>
                 <div className={styles.footerLink}>
-                    {footerLinks.map((link)=>{
+                    {footerLinks.map((link, key)=>{
                         return (
-                        <a key={link.linkId} href={link.linkHref} target={'_blank'}>
+                        <a key={key} href={link.linkHref}>
                             <i className={`fa ${link.linkIcon}`}></i>
                         </a>)
                     })}

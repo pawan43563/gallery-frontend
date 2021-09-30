@@ -1,4 +1,4 @@
-import { useEffect, useState, MouseEventHandler } from "react";
+import { useEffect, useState } from "react";
 import ImageModal from "../../components/ImageModal/ImageModal";
 import styles from './Home.module.scss';
 
@@ -45,7 +45,7 @@ const Home: React.FC = () =>{
                                 id={item.uid}
                                 key={item.uid}
                                 >
-                                <img src={item.image.url} alt='image' />
+                                <img src={item.image.url} alt='galleryImage' />
                                 <div className={styles.overlay}>
                                         <p>{item.image_caption}</p>
                                         <button onClick={ClickHandle} className={styles.viewBtn}> view </button>
