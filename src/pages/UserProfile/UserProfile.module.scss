@@ -1,0 +1,64 @@
+.userContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.userInfo{
+    h1{
+        background-color: red;
+        padding: 20px;
+    }
+
+}
+
+button{
+    margin:30px;
+    font-size: 1.3rem;
+    color:white;
+    font-weight: 700;
+    padding:10px;
+    border:none;
+    border-radius: 20px;
+    background-color: #2F9BF0;
+
+}
+
+.favourite{
+    background-color: rgb(228, 228, 228);
+    .favInfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        margin: 10px;
+        button{
+            margin:30px;
+            font-size: 1.3rem;
+            color:white;
+            font-weight: 700;
+            padding:10px;
+            border:none;
+            border-radius: 20px;
+            background-color: #2F9BF0;
+
+        }
+    }
+    
+}
+
+.favimgs{
+    margin: 20px;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border:2px solid black;
+    border-radius:20px ;
+}
+
+.cards{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}

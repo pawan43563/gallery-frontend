@@ -1,0 +1,33 @@
+.cards{
+    width:400px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    .card{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border: 1px solid black;
+        padding: 5px;
+          
+    }
+     
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        margin: 20px;
+        font-size: 1.4rem;
+        &:hover{
+            color:blue;
+        }
+    }
+}
