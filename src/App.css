@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.registerContainer{
+  /* border: 2px solid black; */
+  position: relative;
+  margin-top: 55px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;

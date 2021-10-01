@@ -103,6 +103,9 @@ const UserProfile:React.FC=()=>{
         
         if (uploadedImage) {
             console.log("Successfully uploaded image");
+            setPicture("")
+            setcaption("")
+            settitle("")
         } else {
             alert("There was an error while uploading picture")
         }

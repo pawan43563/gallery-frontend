@@ -11,10 +11,9 @@
 .pin_container {
     margin: 0;
     padding: 0;
-    width: 90%;
+    width: 100%;
     margin: 10vh auto;
     min-height: 80vh;
-    // border:2px solid red;
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--card_width));
     grid-auto-rows: var(--row_increment);
@@ -29,6 +28,8 @@
     position: relative;
     overflow: hidden;
     transition: .5s ease;
+    box-shadow: 0 19px 19px #b4c3c5c4,0 15px 12px #adc9ce93;
+
     img{
         width:100%;
         height: 100%;

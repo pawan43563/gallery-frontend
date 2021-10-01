@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import styles from './ImageModal.module.scss'
 
 interface Props{
@@ -16,7 +15,7 @@ const ImageModal: React.FC <Props>= ({data, handleModal}) =>{
             <div className={styles.container}>
 
                 <div className={styles.imgContainer}>
-                    <img src = {data.image.url} />
+                    <img src = {data.image.url} alt="galleryImage"/>
                 </div>
                 <div className={styles.description}>
 

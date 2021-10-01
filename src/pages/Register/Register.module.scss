@@ -1,0 +1,62 @@
+
+.registerForm{
+    width: 500px;
+    margin: 40px;
+    height: 80%;
+    background-color: #f8f8b1d2;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 19px 19px #b4c3c5c4,0 15px 12px #adc9ce93;
+
+
+    @media (max-width: 550px) {
+        width: 90%;
+    }
+
+    input{
+        margin-bottom: 15px;
+        width: 60%;
+        height: 25px;
+        background-color: white;
+        color: black;
+        border: 3px solid #E3E3E3;
+        border-radius: 5px;
+
+        @media (max-width: 550px) {
+            width: 80%;
+        }
+    }
+
+    label{
+        width: 60%;
+        text-align: start;
+        margin-bottom: 5px;
+        color: black;
+        font-weight: 500;
+    }
+
+    button{
+        width: 50%;
+        height: 30px;
+        color: black;
+        font-weight: 600;
+        background-color: #3C9AE2;
+        border: 3px solid #3C9AE2;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    p{
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+        color: #3C9AE2;
+        border-bottom: 2px solid #3C9AE2;
+    }
+}
