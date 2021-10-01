@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './UserBoards.module.scss';
 import Board from '../Board/Board';
 
@@ -7,8 +7,7 @@ interface UserBoardsInterface{
 }
 
 const UserBoards:React.FC<UserBoardsInterface>=({img})=>{
-    console.log(img);
-    
+
     return (
         <div className={styles.userBoard}>
             <div className={styles.heading}>

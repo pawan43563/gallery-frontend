@@ -3,6 +3,7 @@ import {BrowserRouter} from 'react-router-dom'
 import './App.css';
 import AppRouter from './AppRouter/AppRouter';
 
+import  Home from '../src/pages/Home/Home'
 
 import './App.css';
 
@@ -11,8 +12,11 @@ function App() {
     <BrowserRouter>
         <div className="App">
             <AppRouter />
+            
         </div>
+
     </BrowserRouter>
+      
   );
 }
 

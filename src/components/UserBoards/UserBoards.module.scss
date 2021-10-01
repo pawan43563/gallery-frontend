@@ -1,5 +1,7 @@
 .userBoard{
-    background-color: rgb(228, 228, 228);
+    // background-color: rgb(228, 228, 228);
+    border: 2px solid black;
+    width: 100%;
     .heading{
         display: flex;
         flex-direction: row;
@@ -24,7 +26,6 @@
 .board{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin: 20px;
     padding: 10px;
     flex-wrap: wrap;

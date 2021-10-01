@@ -1,18 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Board.module.scss';
-import {useHistory} from 'react-router-dom'
+import {useHistory, useParams} from 'react-router-dom'
+import {apicallsingle} from '../../cms/cms_api' 
+import Loader from 'react-loader-spinner';
 interface BoardInterface{
     image:any
 }
+interface paramsInterface{
+    uid:string
+}
 
 const Board:React.FC<BoardInterface>=({image})=>{
-    console.log("Board ",image);
     let history=useHistory()
-
+    const [album,setAlbum]=useState([])
+    let {uid}=useParams<paramsInterface>()
     const redirectalbum=()=>{
-        history.push('/')
+        history.push(`/userprofile/${uid}/album/${image._metadata.uid}`)
     }
 
+    const getImage= async ()=>{
+        const arr:any=[]
+        let flag=0
+        
+        await image.galleryimageref.map(async(e:any)=>{
+            const url1=`http://localhost:4000/users/sss/asss/${e.uid}`   
+            let response=await apicallsingle(url1)
+            arr.push(response.data.image.url)
+            flag=flag+1
+            if(flag===image.galleryimageref.length){               
+                await setAlbum(arr)  
+            }
+        })
+
+    
+    }
+
+
+    useEffect(()=>{
+        getImage()   
+    },[])
 
     return (
         <>  
@@ -23,11 +49,14 @@ const Board:React.FC<BoardInterface>=({image})=>{
                 </div>
                 <div className={styles.cards}>
                     {
-                        image.galleryimageref.map((e:any,i:string)=>(
+                        album.length>0?
+                        album.map((e,i)=>(
                             <div className={styles.card} key={i}>
-                                <h1>{e.uid}</h1>
-                            </div>
+                                 <img src={e}></img>
+                             </div>
                         ))
+                        :
+                        <Loader type="ThreeDots" color="black" height="100" width="100" />
                         
                     }
                 </div>
